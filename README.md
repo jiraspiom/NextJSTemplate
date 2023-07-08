@@ -10,3 +10,11 @@ yarn dev
 pnpm dev
 ```
 
+
+config do settings.json vscode
+"emmet.syntaxProfiles"?{
+    "javascript": "jsx"
+}
+"emmet.includeLanguages":{
+    "javascript":"javascriptreact"
+}
