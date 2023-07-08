@@ -18,3 +18,18 @@ config do settings.json vscode
 "emmet.includeLanguages":{
     "javascript":"javascriptreact"
 }
+
+install @rocketseat/eslint-config -D
+install prettier-plugin-tailwindcss -D
+
+arquivo .eslintrc.json
+add
+{
+  "extends": ["next/core-web-vitals", "@rocketseat/eslint-config/react"]
+}
+
+criar o arquivo prettier.config.js
+module.exports = {
+    plugin: [require('prettier-plugin-tailwindcss')],
+  }
+  
